@@ -1,8 +1,8 @@
 <Project>
   <PropertyGroup>
-    <KSP_DIR_BUILD>C:\Zaidimai\KSP 1.12</KSP_DIR_BUILD>
+    <KSP_DIR_BUILD>C:\Program Files\Kerbal Space Program</KSP_DIR_BUILD>
     <KSP_DATA_DIRNAME>KSP_x64_Data</KSP_DATA_DIRNAME>
-    <UNITY_EDITOR_MANAGED_DIR>C:\Program Files\Unity\Hub\Editor\2019.4.18f1\Editor\Data\Managed\UnityEngine</UNITY_EDITOR_MANAGED_DIR>
+    <UNITY_EDITOR_MANAGED_DIR>C:\Program Files\Unity\Hub\Editor\6000.7.0b5\Editor\Data\Managed\UnityEngine</UNITY_EDITOR_MANAGED_DIR>
     <PostBuildCommand>
       cd "$(SolutionDir)""
       python -m buildtools postbuild --dump-events -f "$(SolutionDir)config.json" -c "$(Configuration)" -t</PostBuildCommand>

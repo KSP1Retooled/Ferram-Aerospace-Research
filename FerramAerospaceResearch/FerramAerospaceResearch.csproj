@@ -12,7 +12,8 @@
     <AssemblyName>FerramAerospaceResearch</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <LangVersion>10</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -60,51 +61,77 @@
     <Reference Include="Assembly-CSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="KSPAssets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\KSPAssets.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="ModularFlightIntegrator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(KSP_DIR_BUILD)\GameData\ModularFlightIntegrator\ModularFlightIntegrator.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Scale_Redist, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\GameData\FerramAerospaceResearch\Plugins\Scale_Redist.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="Unity.Mathematics">
-      <HintPath>C:\Zaidimai\KSP 1.12\GameData\000_KSPBurst\Plugins\Unity.Mathematics.dll</HintPath>
+      <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\Unity.Mathematics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.MathematicsModule">
+      <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.MathematicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScriptingModule">
+      <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.ScriptingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UICommonModule">
+      <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.UICommonModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>$(KSP_DIR_BUILD)\$(KSP_DATA_DIRNAME)\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -223,10 +250,12 @@
     <ProjectReference Include="..\FerramAerospaceResearch.Base\FerramAerospaceResearch.Base.csproj">
       <Project>{8e4e9138-a949-4ded-a08c-4ce3442887b4}</Project>
       <Name>FerramAerospaceResearch.Base</Name>
+      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\ferramGraph\ferramGraph.csproj">
       <Project>{0ccfed24-728c-432b-9fdc-30bef1116ede}</Project>
       <Name>ferramGraph</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
